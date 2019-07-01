@@ -1,36 +1,27 @@
-# hugo-minimal
+# Hugo-Zero
 
-![Desktop](https://s21.postimg.org/9e1ms3tl3/Screen_Shot_2016_11_05_at_18_15_41.png)
+A minimal theme for Hugo static websites based upon [rwieruch/hugo-minimal
+](https://github.com/rwieruch/hugo-minimal).
 
 ## Installation
 
-In your Hugo site `themes` directory, run:
+In your Hugo site `themes/` directory, run:
 
 ```
-$ git clone https://github.com/rwieruch/hugo-minimal.git
+git clone -b release-x.x.x --single-branch https://github.com/TheYorkshireDev/hugo-zero.git
 ```
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `hugo-minimal`.
+Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `hugo-zero`.
 
 ```
-theme = "hugo-minimal"
+theme = "hugo-zero"
 ```
 
 For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
-## Shortcodes
-
-### package-box
-
-{{< fluid_images
-  "col-xs-4|img/posts/post/image.png|some alt text"
-  "col-xs-4|img/posts/post/image.png|some alt text"
-  "col-xs-4|img/posts/post/image.png|some alt text"
-->}}
-
 ## Contributing
 
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/rwieruch/hugo-minimal/issues) to let me know. Or make directly a [pull request](//github.com/rwieruch/hugo-minimal/pulls).
+Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/TheYorkshireDev/hugo-zero/issues) to let me know. Or make directly a [pull request](https://github.com/TheYorkshireDev/hugo-zero/pulls).
 
 ## License
 

@@ -1,5 +1,10 @@
 {
-  "name": "hugo-minimal",
+  "name": "hugo-zero",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheYorkshireDev/hugo-zero.git"
+  },
   "devDependencies": {
     "eslint": "latest",
     "eslint-config-standard": "^6.2.0",
