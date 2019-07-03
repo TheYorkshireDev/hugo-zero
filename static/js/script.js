@@ -7,28 +7,28 @@ var MOBILE_EXTENSION = '_640';
 
 init();
 
-function init() {
+function init () {
   initLazyImages();
   initServiceWorker();
 }
 
-function initServiceWorker() {
-  if('serviceWorker' in navigator) {
+function initServiceWorker () {
+  if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-     .register('../sw.js')
-     .then(doneServiceWorker);
+      .register('../sw.js')
+      .then(doneServiceWorker);
   }
 }
 
-function doneServiceWorker() {
+function doneServiceWorker () {
   console.log('Service Worker for PWA Registered');
 }
 
-function initLazyImages() {
+function initLazyImages () {
   var imgDefer = document.getElementsByClassName('img-lazy');
 
   for (var i = 0; i < imgDefer.length; i++) {
-    if(imgDefer[i].getAttribute('data-lazy-src')) {
+    if (imgDefer[i].getAttribute('data-lazy-src')) {
       var isSrcSet = imgDefer[i].getAttribute('data-is-src-set') === 'is-src-set';
       var isThumb = imgDefer[i].getAttribute('data-is-thumb') === 'is-thumb';
 
@@ -43,7 +43,7 @@ function initLazyImages() {
   }
 }
 
-function getMediaQueriedSrc(src) {
+function getMediaQueriedSrc (src) {
   var extension = src.split('.').pop();
 
   /* the viewport is at least XX pixels wide */
@@ -56,7 +56,7 @@ function getMediaQueriedSrc(src) {
   }
 }
 
-function getThumbSrc(src) {
+function getThumbSrc (src) {
   var extension = src.split('.').pop();
   return src.replace(/\.[^/.]+$/, MOBILE_EXTENSION + '.' + extension);
 }
